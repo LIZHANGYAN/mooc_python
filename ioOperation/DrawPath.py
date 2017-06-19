@@ -12,7 +12,8 @@ def drawPath():
 
     # 读取文件
     result = []
-    file = open("..\data\data.txt","r")
+    filename = input('输入文件名:')
+    file = open(filename,"r")
     for line in file:
         result.append(list(map(float,line.split(','))))
     print(result)
